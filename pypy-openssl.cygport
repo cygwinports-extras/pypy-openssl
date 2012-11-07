@@ -1,0 +1,16 @@
+ORIG_PN="pyOpenSSL"
+inherit pypy-distutils
+
+NAME="pypy-openssl"
+VERSION=0.13
+RELEASE=1
+CATEGORY="Python"
+SUMMARY="PyPy OpenSSL bindings"
+DESCRIPTION="This module is a rather thin wrapper around (a subset of) the
+OpenSSL library."
+HOMEPAGE="http://launchpad.net/pyopenssl"
+
+
+# spaces in CFLAGS messes up distutils
+CFLAGS=-O2
+RESTRICT="debuginfo"
